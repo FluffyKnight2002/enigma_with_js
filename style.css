@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.input-container {
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.number-inputs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.number-inputs input {
+    width: 30%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #333;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.number-inputs select {
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #333;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.text-area-container {
+    position: relative;
+}
+
+.text-area-container textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    font-size: 18px;
+    border: 2px solid #333;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    resize: none;
+}
+
+.reset-button {
+    position: absolute;
+    top: 10px;
+    right: -90px;
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    background-color: #e74c3c;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.reset-button:hover {
+    background-color: red;
+}
+
+.keyboard {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: #333;
+}
+
+.column {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.keyboard button {
+    padding: 15px;
+    margin: 2px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #555;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.keyboard button.highlight {
+    background-color: white;
+    color: black;
+}
+
+.keyboard button:active {
+    transform: scale(0.95);
+}
+
+*, ::after, ::before {
+    box-sizing: content-box;
+}
+
+
+

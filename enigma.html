@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Keyboard</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+
+<div class="input-container">
+    <div class="number-inputs">
+        <input type="number" value="1" class="form-control me-4 rotor rotor1" min="1" max="26">
+        <input type="number" value="1" class="form-control me-4 rotor rotor2" min="1" max="26">
+        <input type="number" value="1" class="form-control me-4 rotor rotor3" min="1" max="26">
+    </div>
+    <div class="text-area-container">
+        <textarea id="textInput" class="form-control" placeholder="Type here..." readonly></textarea>
+        <button class="reset-button" id="resetButton" onclick="reset()">Reset</button>
+    </div>
+</div>
+
+<div class="keyboard">
+    <div class="column">
+        <button data-key="Q" class="btn btn-secondary">Q</button>
+        <button data-key="W" class="btn btn-secondary">W</button>
+        <button data-key="E" class="btn btn-secondary">E</button>
+        <button data-key="R" class="btn btn-secondary">R</button>
+        <button data-key="T" class="btn btn-secondary">T</button>
+        <button data-key="Y" class="btn btn-secondary">Y</button>
+        <button data-key="U" class="btn btn-secondary">U</button>
+        <button data-key="I" class="btn btn-secondary">I</button>
+        <button data-key="O" class="btn btn-secondary">O</button>
+        <button data-key="P" class="btn btn-secondary">P</button>
+    </div>
+    <div class="column">
+        <button data-key="A" class="btn btn-secondary">A</button>
+        <button data-key="S" class="btn btn-secondary">S</button>
+        <button data-key="D" class="btn btn-secondary">D</button>
+        <button data-key="F" class="btn btn-secondary">F</button>
+        <button data-key="G" class="btn btn-secondary">G</button>
+        <button data-key="H" class="btn btn-secondary">H</button>
+        <button data-key="J" class="btn btn-secondary">J</button>
+        <button data-key="K" class="btn btn-secondary">K</button>
+        <button data-key="L" class="btn btn-secondary">L</button>
+    </div>
+    <div class="column">
+        <button data-key="Z" class="btn btn-secondary">Z</button>
+        <button data-key="X" class="btn btn-secondary">X</button>
+        <button data-key="C" class="btn btn-secondary">C</button>
+        <button data-key="V" class="btn btn-secondary">V</button>
+        <button data-key="B" class="btn btn-secondary">B</button>
+        <button data-key="N" class="btn btn-secondary">N</button>
+        <button data-key="M" class="btn btn-secondary">M</button>
+    </div>
+</div>
+
+<div class="plugboard pt-4">
+    <h3 class="text-center">Plugboard</h3>
+    <div id="plug-container" class="container"></div> <!-- Container to hold plugs -->
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/enigma.js"></script>
+</body>
+</html>
